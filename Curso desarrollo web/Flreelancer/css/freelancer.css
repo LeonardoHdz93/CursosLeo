@@ -1,0 +1,68 @@
+:root{
+    --blanco:#ffffff;
+    --oscuro: #212121;
+    --primario:#ffc107;
+    --secundario:#0097a7;
+    --gris: #757575;
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    font-size:16px; /* 1rem = 10px */
+
+}
+/*----------*/
+/*--HEADER--*/
+/*----------*/
+
+.titulo{
+    text-align: center;
+    font: size 3.8rem;
+   
+}
+.titulo span{
+    font-size: 2rem;
+}
+
+/*-------*/
+/*--NAV--*/
+/*-------*/
+
+nav{
+    padding: 5px;
+    width: 100%;
+    background-color:#2ecaed;
+    align-items: center;
+}
+nav a{
+    margin: 0 14rem 0 14rem;
+    padding: 0 3rem 0 3rem ;  
+    text-decoration:  none;
+    color: #fff;
+    font-size: 20px;
+    
+}
+nav a:hover{
+    background-color: var(--primario);
+    transition: 0.3s;
+}
+.titulo{
+    text-align: center;
+    
+}
+.inicio{
+    align-items: center;
+}
+.inicio a{
+
+    border-radius: 5px;
+    color: #fff;
+    background-color:#2ecaed ;
+}
