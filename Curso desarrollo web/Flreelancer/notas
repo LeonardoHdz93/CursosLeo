@@ -1,0 +1,21 @@
+@media (min-width:480px) = Telefono
+@media (min-width:768px) = Tablet
+@media (min-width:1140px) =Laptop
+@media (min-width:1400px) =Laptop
+
+flex column = align items
+
+grid: row / column;
+column-gap: x; crea separacion entre las columnas (como un tipo padding dentro de la estructura de cssgrid )
+
+repeat(x,tamano) hace x cantidad de cosas con el tamano establecido 
+
+flexbox es para alinear elementos dentro de contenedores
+
+cssgrid  es para acomodar el Layout contenedores o elementos 
+
+/**CSS**/
+input[type="text"]{} ocupa el tipo de input como identificador 
+
+scroll-snap-type: y mandatory; para scroll vertical
+scroll-snap-type: x mandatory; para scroll horizontal
