@@ -1,3 +1,12 @@
+:root{
+    --primario:#2D212B;
+    --secundario:#828B8C;
+    --colorletra: #F2F1E2;
+    --bgcolor:#EB5355;
+
+
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -5,49 +14,111 @@
     font-family: 'Roboto', sans-serif;
     
 }
+html{
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+*,*:before, *:after{
+    box-sizing: inherit;
+}
 body{
-    background-color: #cacaca;
-    text-decoration-line: none;
+    background-color: var(--secundario);
+    font-size: 1.6rem;
+    line-height: 1.5;
+}
+a{
+    text-decoration: none;
 }
 .titulo{
     padding: 0;
-    margin: 0;
+    margin: 0 auto;
     height: 100px;
-    background-color: rgb(255, 204, 0);
+    background-color: var(--primario);
     text-align: center;
     line-height: 100px;
 }
 span{
-    font-size: 30px;
+    color: var(--colorletra);
+    font-size: 1.5rem;
 }
+/* Links */
 .contenido{
-    width: 90%;
-    max-width: auto ;
-    margin: 30px auto;
-    font-size: 30px ;
+    
     display: grid;
-    grid-gap: 20px;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(1, auto);
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    
+}
+.links{
+    height: 15rem;
+    width: 15rem;
+    margin: 2rem auto;
+    padding:1rem;
+    border-radius: 2rem;
+    background-color: var(--bgcolor);
+    box-shadow: 0px 17px 28px -1px rgba(79,78,79,1);
+}
 
-    grid-template-areas:"curriculum problemas"
+
+.producto__imagen{
+    width: 100%;
+    border-radius: 5rem;
+    background-color: var(--bgcolor);
 }
-.botones{
-    height: 45px;
-	line-height: 45px;
-	width: 100%;
-	background-color: #cacaca;
-	color: #1d2f3d;
-	border: none;
-	border-radius: 3px;
-	cursor: pointer;
-	transition: .1 ease all;
-    border: solid 2px #000;
-    border-radius:20px;
-    grid-area: problemas;
-    font-size: 20px;
+.producto__nombre{
+    color: var(--primario);
+    font-size: 2rem;
+    font-weight: 700;    
 }
-.botones:hover{
-    background-color: #1d2f3d ;
-    color: #cacaca;
+
+.producto__nombre{
+    margin: 1rem 0;
+    font-family: var(--fuentePrincipal);
+    text-align: center;
+    line-height: 1.2;
+}
+.formulario{
+    height: 8.5rem;
+    border-radius: 5rem;
+    background-color: var(--primario);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+@media (min-width:480px) {
+    .contenido{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .links{
+        height: 30rem;
+        width: 30rem;
+    }
+    
+.producto__imagen{
+    width: 100%;
+    border-radius: 5rem;
+    background-color: var(--bgcolor);
+}
+.producto__nombre{
+    color: var(--primario);
+    font-size: 4rem;
+    font-weight: 700;    
+}
+
+.producto__nombre{
+    margin: 1rem 0;
+    font-family: var(--fuentePrincipal);
+    text-align: center;
+    line-height: 1.2;
+}
+.formulario{
+    height: 17rem;
+    border-radius: 5rem;
+    background-color: var(--primario);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
 }
