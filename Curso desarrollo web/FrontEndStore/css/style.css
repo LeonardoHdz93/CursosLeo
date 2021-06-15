@@ -2,7 +2,7 @@
     --primario:#9c27b0;
     --primarioObscuro:#89119d;
     --secundario:#ffce00;
-    --secundarioObscuro:rgb(233,287,2);
+    --secundarioObscuro:#c9a309;
     --blanco:#fff;
     --negro:#000;
 
@@ -30,7 +30,7 @@ a{
     text-decoration: none;
 }
 img{
-    max-width: 100%;
+    width: 100%;
 }
 .contenedor{
     max-width: 120rem;
@@ -107,12 +107,6 @@ h3{
     padding:1rem;
     background-color: var(--primarioObscuro);
 }
-.producto__imagen{
-    width: 100%;
-}
-.producto__informacion{
-
-}
 .producto__nombre{
     font-size: 4rem;
 }
@@ -152,21 +146,76 @@ h3{
 
 /* Nosotros */
 .nosotros{
-    padding: 2rem;
     display: grid;
-    grid: repeat(3,1fr)/1fr;
+    grid-template-rows: repeat(2,auto);
 }
-.nosotros--imagen{
-    height: fit-content;
-    display: flex;    
-    grid-row: 1/2;
+.nosotros__imagen{
+   
+    grid-row: 1/2;   
+   
+    text-align: center;
 }
 @media (min-width:768px) {
     .nosotros{
-        grid: repeat(3,1fr)/repeat(2,1fr);
+        grid-template-columns:repeat(2,1fr);
+        column-gap: 2rem;
     }
-    .nosotros--imagen{
-        grid-column:1/3;
-        grid-row: 1/2;
+    .nosotros__imagen{
+        grid-column: 2/3;
     }
+}
+/* Bloques */
+.bloques{
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+    gap:2rem;
+}
+@media (min-width:768px) {
+    .bloques{
+        grid-template-columns: repeat(4,1fr);
+    }
+}
+.bloque{
+    text-align: center;
+}
+.bloque__titulo{
+    margin:0;
+}
+/* Pagina del producto */
+@media (min-width:768px) {
+    .camisa{
+        display:grid;
+        grid-template-columns: repeat(2,1fr);
+        column-gap: 2rem;
+    }
+}
+/* Formulario */
+.formulario{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:2rem;
+}
+.formulario__campo{
+    padding: 1rem;
+    border:1rem solid var(--primarioObscuro);
+    background:transparent;
+    color: var(--blanco);
+    font-size: 2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    appearance: none;
+
+}
+.formulario__submit{
+    padding: 2rem;
+    background-color: var(--secundario);
+    border: none;
+    font-family: var(--fuentePrincipal);
+    font-size: 2rem;
+    transition: all 0.3s ease;
+    grid-column: 1/3;
+}
+.formulario__submit:hover{
+    font-size: 2.6rem;
+    background-color: var(--secundarioObscuro);
+    cursor: pointer;
 }

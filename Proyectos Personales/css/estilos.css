@@ -100,7 +100,8 @@ main {
 
 }
 
-.formulario__btn{
+.formulario__btn,
+.formulario__btn_volver{
 	height: 45px;
 	line-height: 45px;
 	width: 30%;
@@ -160,4 +161,9 @@ main {
 	.formulario__btn{
 		width:  100%;
 	}
+}
+
+a{
+	text-decoration: none;
+	color: #fff
 }

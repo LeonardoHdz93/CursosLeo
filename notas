@@ -21,3 +21,15 @@ input[type="text"]{} ocupa el tipo de input como identificador
 
 scroll-snap-type: y mandatory; para scroll vertical
 scroll-snap-type: x mandatory; para scroll horizontal
+
+
+
+
+PATRONES DE RESPONSIVE 
+2 columnas iguales{
+
+}
+3 columnas iguales 
+
+
+background-position: center center;  /** centrar una imagen para responsive desing **/

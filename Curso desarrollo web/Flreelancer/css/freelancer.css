@@ -7,11 +7,6 @@
     --grisClaro: #dfe9f3;
 }
 /* Globales */
-*{
-    margin: 0;
-    padding: 0;
-    font-family: 'krub', sans-serif;
-}
 html{
     font-size: 62.5%;
     box-sizing: border-box; /* Hack para Box model */
