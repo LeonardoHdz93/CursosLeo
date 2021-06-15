@@ -33,3 +33,6 @@ PATRONES DE RESPONSIVE
 
 
 background-position: center center;  /** centrar una imagen para responsive desing **/
+
+
+width: min(%,rem); funciona como un if en css
