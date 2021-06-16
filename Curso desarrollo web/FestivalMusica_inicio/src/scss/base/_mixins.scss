@@ -13,3 +13,14 @@
         @content;
     }
 }
+@mixin grid($columnas,$gap){
+    display: grid;
+    grid-template-columns: repeat($columnas,1fr);
+    gap: $gap;
+}
+@mixin centrar($padding){
+    padding: $padding;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+}
